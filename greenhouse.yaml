@@ -1,0 +1,10 @@
+# Desired actuator state for the greenhouse device.
+# The reconciler pulls this repo, reads this file, and corrects any actuator
+# on the device that doesn't match. Editing a value here and committing is
+# the whole GitOps control surface.
+actuators:
+  pump: "off"
+  fan: "on"
+  vent: "off"
+  lamp: "off"
+  door: "closed"
